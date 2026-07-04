@@ -113,7 +113,7 @@ DCx/
 The main entry point for mesh extraction and evaluation is `evaluate_finetune.py`. You can extract zero-level sets from either Ground Truth UDF (GTUDF) or Neural UDF (NUDF).
 
 ### 1. Extracting from Ground Truth UDF (GTUDF)
-By default, the script extracts the mesh from a GTUDF (`--udf_type 1`). This method reads the raw `.ply` mesh and computes the UDF using `cubvh`.
+By default, the script extracts the mesh from a GTUDF (`--udf_type 1`). This method reads the raw `.ply` mesh and computes the UDF using `cubvh`.If we have enough sampling points, there's no need for supplementary sampling.
 
 ```bash
 python evaluate_finetune.py \
@@ -121,9 +121,9 @@ python evaluate_finetune.py \
     --datadir <your_data_dir> \
     --dataname <your_shape_name> \
     --udf_type 1 \
+    --num_points 200000000 \
     --gpu 0 \
     --thinning \
-    --supplementary_sampling \
     --postprocessing \
     --finetune
 ```
