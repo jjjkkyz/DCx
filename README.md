@@ -7,6 +7,9 @@
   </p>
 
   <p>
+    <a href="https://doi.org/10.1145/3811388"><img alt="Paper" src="https://img.shields.io/badge/Paper-ACM_DL-b31b1b.svg"></a>
+    <!-- <a href="https://arxiv.org/abs/xxxx.xxxxx"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg"></a> -->
+    <!-- <a href="https://your-project-page.github.io"><img alt="Project Page" src="https://img.shields.io/badge/Project-Page-ff69b4.svg"></a> -->
     <a href="https://github.com/jjjkkyz/DCx/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
     <img alt="Python" src="https://img.shields.io/badge/Python-3.9-green.svg">
     <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.2.1-ee4c2c.svg">
