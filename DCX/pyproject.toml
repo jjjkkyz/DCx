@@ -1,0 +1,12 @@
+[build-system]
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "dcx_pkg"
+version = "0.0.1"
+
+
+[tool.scikit-build]
+cmake.version = ">=3.15"
+cmake.source-dir = "."
