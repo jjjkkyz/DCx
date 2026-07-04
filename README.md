@@ -12,9 +12,7 @@
     <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.2.1-ee4c2c.svg">
     <img alt="CUDA" src="https://img.shields.io/badge/CUDA-11.8-76B900.svg">
   </p>
-  
-  <!-- [TODO: 请在此处插入一张最能代表你们工作成果的 Teaser 图] -->
-  <!-- 建议图片宽度设置为 100% 或 800px -->
+
   <img src="assets/teaser.png" alt="DCx Teaser" width="100%">
   <p><em>Extraction of complex non-manifold structures using DCx from Unsigned Distance Functions.</em></p>
 </div>
@@ -29,7 +27,6 @@ DCx provides a robust framework to extract high-quality, non-manifold zero-level
 
 ## ⚙️ Methodology Pipeline
 
-<!-- [TODO: 请在此处插入算法Pipeline图] -->
 <div align="center">
   <img src="assets/pipeline.png" alt="DCx Pipeline" width="100%">
   <p><em>Overview of the DCx pipeline: from UDF sampling to the final mesh extraction via Expanded Cubes.</em></p>
@@ -37,17 +34,16 @@ DCx provides a robust framework to extract high-quality, non-manifold zero-level
 
 ## 🖼️ Gallery & Results
 
-<!-- [TODO: 请在此处插入几张结果对比图，或者多视图结果] -->
 <div align="center">
   <table>
     <tr>
       <!-- 你可以根据需要增加或减少 <td> 标签来并排显示图片 -->
-      <td><img src="assets/result_1.png" alt="Result 1" width="100%"></td>
-      <td><img src="assets/result_2.png" alt="Result 2" width="100%"></td>
+      <td><img src="assets/res1.png" alt="Result 1" width="100%"></td>
+      <td><img src="assets/res2.png" alt="Result 2" width="100%"></td>
     </tr>
     <tr>
-      <td><img src="assets/result_3.png" alt="Result 3" width="100%"></td>
-      <td><img src="assets/result_4.png" alt="Result 4" width="100%"></td>
+      <td><img src="assets/res3.png" alt="Result 3" width="100%"></td>
+      <td><img src="assets/res4.png" alt="Result 4" width="100%"></td>
     </tr>
   </table>
   <p><em>Visual comparison of extracted meshes using our proposed DCx algorithm.</em></p>
