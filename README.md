@@ -36,18 +36,35 @@ conda install -c nvidia cuda-toolkit=11.8 cuda-nvcc=11.8 cuda-cccl=11.8 -y
 
 # 4. Install other Python dependencies
 pip install open3d scikit-image tqdm pyhocon==0.3.57 trimesh PyMCubes scipy point_cloud_utils==0.29.7
-
-'''
+```
 We use CAPUDF to compute Neural Unsigned Distance Functions (NUDF). You need to compile the Chamfer Distance extension first:
 
-'''bash
+```bash
 cd CAPUDF/extensions/chamfer_dist
 python setup.py install
-'''
+```
 We use cubvh to compute Ground Truth Unsigned Distance Functions (GTUDF). Install it directly via git:
-'''bash
+```bash
 pip install git+https://github.com/ashawkey/cubvh --no-build-isolation
-'''
-
-
+```
+## Directory Structure
+```text
+DCx/
+├── evaluate_finetune.py     #
+├── ckpt/                    # 放置CAPUDF训练出的checkpoint文件
+├── confs/                   # Configuration files for experiments 
+│   └── ...                  
+├── DCX/                     # Core DCx algorithm 
+│   └── ...                  
+├── CAPUDF/                  # NUDF computation module based on CAP-UDF 
+│   ├── extensions/          # Custom C++/CUDA extensions 
+│   │   └── chamfer_dist/    # Chamfer distance extension 
+│   └── ...                  
+├── LICENSE
+├── data                     # Place your data
+│   ├── dataset/             # 你可以直接将数据集加入进来，但需要在conf中设置dataset_dir
+│   │    └──...
+│   └──...                   
+└── README.md                # Project documentation and setup instructions (项目文档与环境配置说明)
+```
 
