@@ -31,12 +31,23 @@ conda activate dcx
 # 2. Install PyTorch with CUDA 11.8
 conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=11.8 -c pytorch -c nvidia
 
-# 3. Install CUDA toolkit and related packages
+# 3. Install CUDA toolkit and related packages for CAPUDF
 conda install -c nvidia cuda-toolkit=11.8 cuda-nvcc=11.8 cuda-cccl=11.8 -y
 
 # 4. Install other Python dependencies
 pip install open3d scikit-image tqdm pyhocon==0.3.57 trimesh PyMCubes scipy point_cloud_utils==0.29.7
 
 '''
+We use CAPUDF to compute Neural Unsigned Distance Functions (NUDF). You need to compile the Chamfer Distance extension first:
+
+'''bash
+cd CAPUDF/extensions/chamfer_dist
+python setup.py install
+'''
+We use cubvh to compute Ground Truth Unsigned Distance Functions (GTUDF). Install it directly via git:
+'''bash
+pip install git+https://github.com/ashawkey/cubvh --no-build-isolation
+'''
+
 
 
