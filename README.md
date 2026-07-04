@@ -1,4 +1,4 @@
-```markdown
+
 <div align="center">
   <h1>🧊 DCx</h1>
   <p>
@@ -193,4 +193,4 @@ numpages = {20},
 keywords = {dual contouring, zero-level set extraction, unsigned distance functions, neural representations, non-manifold structures}
 }
 ```
-```
+
