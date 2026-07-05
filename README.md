@@ -70,7 +70,7 @@ conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=
 conda install -c nvidia cuda-toolkit=11.8 cuda-nvcc=11.8 cuda-cccl=11.8 -y
 
 # 4. Install other Python dependencies
-pip install open3d scikit-image tqdm pyhocon==0.3.57 trimesh PyMCubes scipy point_cloud_utils==0.29.7
+pip install open3d scikit-image tqdm pyhocon==0.3.57 trimesh PyMCubes scipy point_cloud_utils==0.29.7 "numpy<2"
 
 # 5. Install DCx
 cd DCX
